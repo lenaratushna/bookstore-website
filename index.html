@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pages</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__top">
+				<div class="header__top-container container">
+					<a href="#" class="header__logo">
+						<img src="img/logo.svg" alt="" class="logo" />
+					</a>
+
+					<form class="header__search-form">
+						<input
+							class="header__search-input"
+							id="search-box"
+							type="search"
+							placeholder="Search here ..."
+						/>
+						<label
+							for="search-box"
+							class="header__search-icon fas fa-search"
+						></label>
+					</form>
+
+					<div class="header__icons">
+						<div id="search-btn" class="header__icon fas fa-search"></div>
+						<a href="#!" class="header__icon fas fa-heart"></a>
+						<a href="#!" class="header__icon fas fa-shopping-cart"></a>
+						<div id="login-btn" class="header__icon fas fa-user"></div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="container">
+					<nav class="header__menu">
+						<ul class="header__menu-list">
+							<li class="header__menu-item">
+								<a href="#home" class="header__menu-link">Home</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#featured" class="header__menu-link">Featured</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#arrivals" class="header__menu-link">Arrivals</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#reviews" class="header__menu-link">Reviews</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#blog" class="header__menu-link">Blog</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+        <nav class="bottom-menu">
+            <ul class="bottom-menu__list">
+                <li class="bottom-menu__item">
+                    <a href="#home" class="bottom-menu__link fas fa-home"></a>
+                </li>
+                <li class="bottom-menu__item">
+                    <a href="#featured" class="bottom-menu__link fas fa-list"></a>
+                </li>
+                <li class="bottom-menu__item">
+                    <a href="#arrivals" class="bottom-menu__link fas fa-tags"></a>
+                </li>
+                <li class="bottom-menu__item">
+                    <a href="#reviews" class="bottom-menu__link fas fa-comments"></a>
+                </li>
+                <li class="bottom-menu__item">
+                    <a href="#blog" class="bottom-menu__link fas fa-blog"></a>
+                </li>
+            </ul>
+        </nav>
+
+        
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
