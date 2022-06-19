@@ -12,10 +12,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
@@ -92,7 +89,23 @@
             </ul>
         </nav>
 
-        
+        <div class="login">
+            <div class="container">
+                <form class="login__form">
+                    <div id="close-login-btn" class="login__form-close fas fa-times"></div>
+                    <h3 class="login__form-title">Sign In</h3>
+                    <input class="login__form-input" type="email" placeholder="Enter your email">
+                    <input class="login__form-input" type="password" placeholder="Enter your password">
+                    <div class="login__form-checkbox">
+                        <input type="checkbox" id="remember-me">
+                        <label class="login__form-label" for="remember-me">Remember me</label>
+                    </div>
+                    <input class="login__form-btn btn" type="submit" value="Sign in">
+                    <p class="login__form-text">Forgot password? <a  class="login__form-link" href="#!">Click here</a></p>
+                    <p class="login__form-text">Don't have an account? <a  class="login__form-link" href="#!">Create one</a></p>
+                </form>
+            </div>
+        </div>
 
 		<script src="js/script.js"></script>
 	</body>
