@@ -82,7 +82,7 @@ body {
 }
 
 section {
-    padding: 80px 0 20px;
+    padding: 80px 0;
 }
 
 @media(max-width: 991px) {
@@ -381,6 +381,10 @@ section {
     font-size: 19px;
 }
 
+.home {
+    padding-bottom: 20px;
+}
+
 .home__row {
     display: flex;
     align-items: center;
@@ -603,6 +607,42 @@ section {
         margin-bottom: 20px;
     }
 }
+
+.newsletter {
+    background-color:#9E98DC;
+}
+
+.newsletter__form {
+    text-align: center;
+}
+
+.newsletter__title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #f5f5f5;
+}
+
+.newsletter__input {
+    width: 350px;
+    padding: 10px 12px;
+    font-size: 16px;
+}
+
+@media(max-width: 500px) {
+
+    .newsletter__input {
+        width: 90%;
+    }
+
+    .newsletter__btn {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 4px;
+    }
+}
+
 
 
 
