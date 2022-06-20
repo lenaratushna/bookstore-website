@@ -12,126 +12,290 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<header class="header">
-			<div class="header__top">
-				<div class="header__top-container container">
-					<a href="#" class="header__logo">
-						<img src="img/logo.svg" alt="" class="logo" />
-					</a>
+		<div class="page">
+			<header class="header">
+				<div class="header__top">
+					<div class="header__top-container container">
+						<a href="#" class="header__logo">
+							<img src="img/logo.svg" alt="" class="logo" />
+						</a>
 
-					<form class="header__search-form">
-						<input
-							class="header__search-input"
-							id="search-box"
-							type="search"
-							placeholder="Search here ..."
-						/>
-						<label
-							for="search-box"
-							class="header__search-icon fas fa-search"
-						></label>
-					</form>
+						<form class="header__search-form">
+							<input
+								class="header__search-input"
+								id="search-box"
+								type="search"
+								placeholder="Search here ..."
+							/>
+							<label
+								for="search-box"
+								class="header__search-icon fas fa-search"
+							></label>
+						</form>
 
-					<div class="header__icons">
-						<div id="search-btn" class="header__icon fas fa-search"></div>
-						<a href="#!" class="header__icon fas fa-heart"></a>
-						<a href="#!" class="header__icon fas fa-shopping-cart"></a>
-						<div id="login-btn" class="header__icon fas fa-user"></div>
+						<div class="header__icons">
+							<div id="search-btn" class="header__icon fas fa-search"></div>
+							<a href="#!" class="header__icon fas fa-heart"></a>
+							<a href="#!" class="header__icon fas fa-shopping-cart"></a>
+							<div id="login-btn" class="header__icon fas fa-user"></div>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="header__bottom">
+				<div class="header__bottom">
+					<div class="container">
+						<nav class="header__menu">
+							<ul class="header__menu-list">
+								<li class="header__menu-item">
+									<a href="#home" class="header__menu-link">Home</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="#featured" class="header__menu-link">Featured</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="#arrivals" class="header__menu-link">Arrivals</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="#reviews" class="header__menu-link">Reviews</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="#blog" class="header__menu-link">Blog</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<nav class="bottom-menu">
+				<ul class="bottom-menu__list">
+					<li class="bottom-menu__item">
+						<a href="#home" class="bottom-menu__link fas fa-home"></a>
+					</li>
+					<li class="bottom-menu__item">
+						<a href="#featured" class="bottom-menu__link fas fa-list"></a>
+					</li>
+					<li class="bottom-menu__item">
+						<a href="#arrivals" class="bottom-menu__link fas fa-tags"></a>
+					</li>
+					<li class="bottom-menu__item">
+						<a href="#reviews" class="bottom-menu__link fas fa-comments"></a>
+					</li>
+					<li class="bottom-menu__item">
+						<a href="#blog" class="bottom-menu__link fas fa-blog"></a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="login">
 				<div class="container">
-					<nav class="header__menu">
-						<ul class="header__menu-list">
-							<li class="header__menu-item">
-								<a href="#home" class="header__menu-link">Home</a>
-							</li>
-							<li class="header__menu-item">
-								<a href="#featured" class="header__menu-link">Featured</a>
-							</li>
-							<li class="header__menu-item">
-								<a href="#arrivals" class="header__menu-link">Arrivals</a>
-							</li>
-							<li class="header__menu-item">
-								<a href="#reviews" class="header__menu-link">Reviews</a>
-							</li>
-							<li class="header__menu-item">
-								<a href="#blog" class="header__menu-link">Blog</a>
-							</li>
-						</ul>
-					</nav>
+					<form class="login__form">
+						<div
+							id="close-login-btn"
+							class="login__form-close fas fa-times"
+						></div>
+						<h3 class="login__form-title">Sign In</h3>
+						<input
+							class="login__form-input"
+							type="email"
+							placeholder="Enter your email"
+						/>
+						<input
+							class="login__form-input"
+							type="password"
+							placeholder="Enter your password"
+						/>
+						<div class="login__form-checkbox">
+							<input type="checkbox" id="remember-me" />
+							<label class="login__form-label" for="remember-me"
+								>Remember me</label
+							>
+						</div>
+						<input class="login__form-btn btn" type="submit" value="Sign in" />
+						<p class="login__form-text">
+							Forgot password?
+							<a class="login__form-link" href="#!">Click here</a>
+						</p>
+						<p class="login__form-text">
+							Don't have an account?
+							<a class="login__form-link" href="#!">Create one</a>
+						</p>
+					</form>
 				</div>
 			</div>
-		</header>
 
-        <nav class="bottom-menu">
-            <ul class="bottom-menu__list">
-                <li class="bottom-menu__item">
-                    <a href="#home" class="bottom-menu__link fas fa-home"></a>
-                </li>
-                <li class="bottom-menu__item">
-                    <a href="#featured" class="bottom-menu__link fas fa-list"></a>
-                </li>
-                <li class="bottom-menu__item">
-                    <a href="#arrivals" class="bottom-menu__link fas fa-tags"></a>
-                </li>
-                <li class="bottom-menu__item">
-                    <a href="#reviews" class="bottom-menu__link fas fa-comments"></a>
-                </li>
-                <li class="bottom-menu__item">
-                    <a href="#blog" class="bottom-menu__link fas fa-blog"></a>
-                </li>
-            </ul>
-        </nav>
+			<section class="home" id="home">
+				<div class="container">
+					<div class="home__row">
+						<div class="home__content">
+							<h2 class="home__title">Up to 50% off</h2>
+							<p class="home__text">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+								voluptates nisi fuga eius libero eum distinctio doloribus.
+								Laborum, reprehenderit ab.
+							</p>
+							<a href="#!" class="home__btn btn">Shop now</a>
+						</div>
+						<div class="books-slider">
+							<div class="book-slider__wrapper">
+								<a class="books-slider__book-link" href="#!">
+									<img
+										class="books-slider__book-img"
+										src="img/book-1.jpg"
+										alt="book"
+									/>
+								</a>
+								<a class="books-slider__book-link" href="#!">
+									<img
+										class="books-slider__book-img"
+										src="img/book-3.jpg"
+										alt="book"
+									/>
+								</a>
+								<a class="books-slider__book-link" href="#!">
+									<img
+										class="books-slider__book-img"
+										src="img/book-6.jpg"
+										alt="book"
+									/>
+								</a>
+							</div>
+							<img
+								class="books-slider__stand"
+								src="img/stand.png"
+								alt="stand"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <div class="login">
-            <div class="container">
-                <form class="login__form">
-                    <div id="close-login-btn" class="login__form-close fas fa-times"></div>
-                    <h3 class="login__form-title">Sign In</h3>
-                    <input class="login__form-input" type="email" placeholder="Enter your email">
-                    <input class="login__form-input" type="password" placeholder="Enter your password">
-                    <div class="login__form-checkbox">
-                        <input type="checkbox" id="remember-me">
-                        <label class="login__form-label" for="remember-me">Remember me</label>
-                    </div>
-                    <input class="login__form-btn btn" type="submit" value="Sign in">
-                    <p class="login__form-text">Forgot password? <a  class="login__form-link" href="#!">Click here</a></p>
-                    <p class="login__form-text">Don't have an account? <a  class="login__form-link" href="#!">Create one</a></p>
-                </form>
-            </div>
-        </div>
-
-        <section class="home" id="home">
-            <div class="container">
-                <div class="home__row">
-                    <div class="home__content">
-                        <h2 class="home__title">Up to 50% off</h2>
-                        <p class="home__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque voluptates nisi fuga eius libero eum distinctio doloribus. Laborum, reprehenderit ab.</p>
-                        <a href="#!" class="home__btn btn">Shop now</a>
-                    </div>
-                    <div class="books-slider">
-                        <div class="book-slider__wrapper">
-                            <a class="books-slider__book-link" href="#!">
-                                <img class="books-slider__book-img" src="img/book-1.jpg" alt="book">
-                            </a>
-                            <a class="books-slider__book-link" href="#!">
-                                <img class="books-slider__book-img" src="img/book-3.jpg" alt="book">
-                            </a>
-                            <a class="books-slider__book-link" href="#!">
-                                <img class="books-slider__book-img" src="img/book-6.jpg" alt="book">
-                            </a>
+			<section class="featured" id="featured">
+				<div class="container">
+                    <h2 class="featured__title title">Featured books</h2>
+                    <div class="featured__wrapper">
+                        <div class="featured__item book">
+                            <img src="img/book-1.jpg" alt="book" class="book__img">
+                            <div class="book__info">
+                                <span class="book__author">Kevin Kwan</span>
+                                <h3 class="book__title">Crazy rich asians</h3>
+                                <div class="book__review">
+                                    <div class="rating">
+                                        <div class="rating-active" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                                <p class="book__desc">
+                                    the outrageously funny debut novel about three super-rich, pedigreed Chinese families and the gossip...
+                                </p>
+                                <div class="book__price">
+                                    <span>$4.99</span><span class="book__price-old">$24.12</span>
+                                </div>
+                                <a href="#!" class="book__btn btn-outline">buy now</a>
+                            </div>
                         </div>
-                        <img class="books-slider__stand" src="img/stand.png" alt="stand">
+                        <div class="featured__item book">
+                            <img src="img/book-2.jpg" alt="book" class="book__img">
+                            <div class="book__info">
+                                <span class="book__author">Margaret Atwood</span>
+                                <h3 class="book__title">The handmaid’s tale</h3>
+                                <div class="book__review">
+                                    <div class="rating">
+                                        <div class="rating-active" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                                <p class="book__desc">
+                                    This novel can be interpreted as a double narrative, Offred's tale and the handmaids' tales. The night..
+                                </p>
+                                <div class="book__price">
+                                    <span>$6.99</span><span class="book__price-old">$18.99</span>
+                                </div>
+                                <a href="#!" class="book__btn btn-outline">buy now</a>
+                            </div>
+                        </div>
+                        <div class="featured__item book">
+                            <img src="img/book-3.jpg" alt="book" class="book__img">
+                            <div class="book__info">
+                                <span class="book__author">Aldous Huxley</span>
+                                <h3 class="book__title">Brave new world</h3>
+                                <div class="book__review">
+                                    <div class="rating">
+                                        <div class="rating-active" style="width: 70%;"></div>
+                                    </div>
+                                </div>
+                                <p class="book__desc">
+                                    dystopian novel written in 1931 by English author Aldous Huxley, and published in 1932. Largely set in...
+                                </p>
+                                <div class="book__price">
+                                    <span>$12.43</span><span class="book__price-old">$42.50</span>
+                                </div>
+                                <a href="#!" class="book__btn btn-outline">buy now</a>
+                            </div>
+                        </div>
+                        <div class="featured__item book">
+                            <img src="img/book-4.jpg" alt="book" class="book__img">
+                            <div class="book__info">
+                                <span class="book__author">Tara Westover</span>
+                                <h3 class="book__title">Educated</h3>
+                                <div class="book__review">
+                                    <div class="rating">
+                                        <div class="rating-active" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                                <p class="book__desc">
+                                    It is a tale of fierce family loyalty and of the grief that comes with severing the closest of ties. With...
+                                </p>
+                                <div class="book__price">
+                                    <span>$12.68</span><span class="book__price-old">$34.20</span>
+                                </div>
+                                <a href="#!" class="book__btn btn-outline">buy now</a>
+                            </div>
+                        </div>
+                        <div class="featured__item book">
+                            <img src="img/book-5.jpg" alt="book" class="book__img">
+                            <div class="book__info">
+                                <span class="book__author">Marianne Fritz</span>
+                                <h3 class="book__title">The weight of things</h3>
+                                <div class="book__review">
+                                    <div class="rating">
+                                        <div class="rating-active" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                                <p class="book__desc">
+                                    You discover not an eccentric fluke of literary nature but rather a brilliant and masterful satiris...                                </p>
+                                <div class="book__price">
+                                    <span>$18.23</span><span class="book__price-old">$24.12</span>
+                                </div>
+                                <a href="#!" class="book__btn btn-outline">$34.20</a>
+                            </div>
+                        </div>
+                        <div class="featured__item book">
+                            <img src="img/book-6.jpg" alt="book" class="book__img">
+                            <div class="book__info">
+                                <span class="book__author">Chris Power</span>
+                                <h3 class="book__title">Mothers stories</h3>
+                                <div class="book__review">
+                                    <div class="rating">
+                                        <div class="rating-active" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                                <p class="book__desc">
+                                    the stories in Mothers lay bare the emotional and psychic damage of life, love, and abandonment...                                </p>
+                                <div class="book__price">
+                                    <span>$12.35</span><span class="book__price-old">$20.76</span>
+                                </div>
+                                <a href="#!" class="book__btn btn-outline">buy now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+			</section>
+		</div>
 
 		<script src="js/script.js"></script>
 	</body>
