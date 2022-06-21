@@ -39,10 +39,10 @@ loginForm.addEventListener('click', (e) => {
 var swiper = new Swiper('.arrivals-slider', {
     slidesPerView: 1,
     breakpoints: {
-        440: {
+        400: {
           slidesPerView: 2,
         },
-        600: {
+        550: {
           slidesPerView: 3,
         },
         880: {
