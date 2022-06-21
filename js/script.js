@@ -35,3 +35,21 @@ loginWindow.addEventListener('click', () => {
 loginForm.addEventListener('click', (e) => {
     e.stopPropagation();
 });
+
+var swiper = new Swiper('.arrivals-slider', {
+    slidesPerView: 1,
+    breakpoints: {
+        440: {
+          slidesPerView: 2,
+        },
+        600: {
+          slidesPerView: 3,
+        },
+        880: {
+            slidesPerView: 4,
+        },
+        1024: {
+          slidesPerView: 5,
+        },
+      },
+  });

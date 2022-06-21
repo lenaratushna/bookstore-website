@@ -5,6 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Pages</title>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -181,7 +185,9 @@
                     <h2 class="featured__title title">Featured books</h2>
                     <div class="featured__wrapper">
                         <div class="featured__item book">
-                            <img src="img/book-1.jpg" alt="book" class="book__img">
+                            <a href="#!" class="book__link">
+                                <img src="img/book-1.jpg" alt="book" class="book__img">
+                            </a>
                             <div class="book__info">
                                 <span class="book__author">Kevin Kwan</span>
                                 <h3 class="book__title">Crazy rich asians</h3>
@@ -200,7 +206,9 @@
                             </div>
                         </div>
                         <div class="featured__item book">
-                            <img src="img/book-2.jpg" alt="book" class="book__img">
+                            <a href="#!" class="book__link">
+                                <img src="img/book-2.jpg" alt="book" class="book__img">
+                            </a>
                             <div class="book__info">
                                 <span class="book__author">Margaret Atwood</span>
                                 <h3 class="book__title">The handmaid’s tale</h3>
@@ -219,7 +227,9 @@
                             </div>
                         </div>
                         <div class="featured__item book">
-                            <img src="img/book-3.jpg" alt="book" class="book__img">
+                            <a href="#!" class="book__link">
+                                <img src="img/book-3.jpg" alt="book" class="book__img">
+                            </a>
                             <div class="book__info">
                                 <span class="book__author">Aldous Huxley</span>
                                 <h3 class="book__title">Brave new world</h3>
@@ -238,7 +248,9 @@
                             </div>
                         </div>
                         <div class="featured__item book">
-                            <img src="img/book-4.jpg" alt="book" class="book__img">
+                            <a href="#!" class="book__link">
+                                <img src="img/book-4.jpg" alt="book" class="book__img">
+                            </a>
                             <div class="book__info">
                                 <span class="book__author">Tara Westover</span>
                                 <h3 class="book__title">Educated</h3>
@@ -257,7 +269,9 @@
                             </div>
                         </div>
                         <div class="featured__item book">
-                            <img src="img/book-5.jpg" alt="book" class="book__img">
+                            <a href="#!" class="book__link">
+                                <img src="img/book-5.jpg" alt="book" class="book__img">
+                            </a>
                             <div class="book__info">
                                 <span class="book__author">Marianne Fritz</span>
                                 <h3 class="book__title">The weight of things</h3>
@@ -275,7 +289,9 @@
                             </div>
                         </div>
                         <div class="featured__item book">
-                            <img src="img/book-6.jpg" alt="book" class="book__img">
+                            <a href="#!" class="book__link">
+                                <img src="img/book-6.jpg" alt="book" class="book__img">
+                            </a>
                             <div class="book__info">
                                 <span class="book__author">Chris Power</span>
                                 <h3 class="book__title">Mothers stories</h3>
@@ -307,8 +323,55 @@
                     </form>
                 </div>
             </section>
+
+            <section class="arrivals" id="arrivals">
+                <div class="container">
+                    <h2 class="arrivals__title title">New arrivals</h2>
+                    <div class="arrivals-slider swiper">
+                        <div class="arrivals-slider__wrapper swiper-wrapper">
+                            <a href="#!" class="arrivals-slider__item swiper-slide">
+                                <img src="img/book-5.jpg" alt="book" class="arrivals-slider__img">
+                                <h4 class="arrivals-slider__title">The weight of things</h4>
+                                <div class="book__price">
+                                    <span>$18.23</span><span class="book__price-old">$24.12</span>
+                                </div>
+                            </a>
+                            <a href="#!" class="arrivals-slider__item swiper-slide">
+                                <img src="img/book-4.jpg" alt="book" class="arrivals-slider__img">
+                                <h4 class="arrivals-slider__title">Educated</h4>
+                                <div class="book__price">
+                                    <span>$12.68</span><span class="book__price-old">$34.20</span>
+                                </div>
+                            </a>
+                            <a href="#!" class="arrivals-slider__item swiper-slide">
+                                <img src="img/book-3.jpg" alt="book" class="arrivals-slider__img">
+                                <h3 class="arrivals-slider__title">Brave new world</h3>
+                                <div class="book__price">
+                                    <span>$12.43</span><span class="book__price-old">$42.50</span>
+                                </div>
+                            </a>
+                            <a href="#!" class="arrivals-slider__item swiper-slide">
+                                <img src="img/book-2.jpg" alt="book" class="arrivals-slider__img">
+                                <h3 class="arrivals-slider__title">The handmaid’s tale</h3>
+                                <div class="book__price">
+                                    <span>$6.99</span><span class="book__price-old">$18.99</span>
+                                </div>
+                            </a>
+                            <a href="#!" class="arrivals-slider__item swiper-slide">
+                                <img src="img/book-1.jpg" alt="book" class="arrivals-slider__img">
+                                <h3 class="arrivals-slider__title">Crazy rich asians</h3>
+                                <div class="book__price">
+                                    <span>$4.99</span><span class="book__price-old">$24.12</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 		</div>
 
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
