@@ -535,35 +535,8 @@ section {
 }
 
 .rating {
-    width: 73px;
-    position: relative;
-    font-size: 24px;
+    font-size: 14px;
     color: #FFCA42;
-}
-
-.rating::before {
-    display: block;
-    content: '○○○○○';
-    
-}
-
-.rating-active {
-    position: absolute;
-    width: 0%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-}
-
-.rating-active::before {
-    display: block;
-    content: '●●●●●';
-    position: absolute;
-    width: 0%;
-    height: 100%;
-    top: 0;
-    left: 0;
 }
 
 .book__desc {
@@ -732,4 +705,52 @@ section {
 .review__name {
     font-weight: 600;
     font-size: 19px;
+}
+
+.blog-slider__item {
+    width: 420px;
+    background-color: #fff;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.blog-slider__item-link {
+    display: block;
+}
+
+.blog__image-link {
+    display: block;
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blog__image {
+    border-radius: 5px 5px 0 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog__content {
+    padding: 25px 30px 30px;
+}
+
+.blog__title-link {
+    display: block;
+    color: #1C2A39;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.blog__text {
+    color: #5C6A79;
+    margin-bottom: 10px;
+}
+
+.blog__link {
+    color: #4C3DB2;
+    text-decoration: underline;
 }
