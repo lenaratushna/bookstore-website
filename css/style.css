@@ -162,6 +162,7 @@ section {
 }
 
 .header__logo {
+    display: block;
     max-width: 100px;
 }
 
@@ -753,4 +754,74 @@ section {
 .blog__link {
     color: #4C3DB2;
     text-decoration: underline;
+}
+
+.footer {
+    padding: 15px 15px;
+    background-color:#9E98DC;
+}
+
+.footer__wrapper  {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    column-gap: 70px;
+    row-gap: 20px;
+}
+
+
+.footer__logo {
+    margin-right: auto;
+    display: block;
+    max-width: 100px;
+}
+
+.footer__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__contacts-link {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.footer__contacts-link:hover {
+    color: #FFCA42;
+}
+
+.footer__contacts-link i {
+    color: #FFCA42;
+    margin-right: 8px;
+}
+
+.footer__social-links {
+    align-self: center;
+    display: flex;
+    gap: 10px;
+}
+
+.footer__social-link {
+    font-size: 24px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.footer__social-link:hover {
+    color: #FFCA42;
+}
+
+@media(max-width:630px) {
+    .footer__wrapper  {
+        flex-direction: column;
+        justify-content: center;
+
+    }
 }
